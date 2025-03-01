@@ -1,0 +1,18 @@
+//utilizando APIs
+    useEffect(() => {
+        const fetchTasks = async () => {
+            //chama a api
+            const response = await fetch(
+                'http://jsonplaceholder.typicode.com/todos?_limit10',
+                {
+                    method: 'GET',
+                }
+            )
+            //pega o retorno da api
+            const data = await.response.json();
+
+            //traz os dados pro state
+            setTasks(data);
+        };
+        fetchTasks();
+    }, [])

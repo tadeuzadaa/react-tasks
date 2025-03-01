@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TasksList{
+    display: flex;
+    align-items: stretch; /*mesma altura*/
+}
+
+.TasksList button{
+    background-color: #588157;
+    color: white;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.30s color 0.20s;
+    
+  }
+
+    
+
+    .TasksList button:hover{  
+        color: #3a5a40;
+        border-color: #3a5a40;
+    }      
+
+    #buttomTitle{
+        width: 100%;
+    }
+
+.TaskConcluida{
+    text-decoration: line-through;
+}

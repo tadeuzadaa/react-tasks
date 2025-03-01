@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#MainConatiner {
+  background-color: #3a5a40;
+  color: whitesmoke;
+  border: solid 3px #588157;
+  border-radius: 16px;
+}
+
+
