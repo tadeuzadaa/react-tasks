@@ -26,12 +26,12 @@ function AddTasks({onTasksAddSubmit}){
 
         <button
             onClick={()=> {
-                if(!title.trim || !description.trim){
+                if(!title.trim() || !description.trim()){
                     alert("Preencha os campos corretamente!")
-                }
+                } else
                 onTasksAddSubmit(title, description),
-                setTitle(""),
-                setDescription("")
+            setTitle(""),
+            setDescription("")
         }}
         >
             Adicionar Tarefa
